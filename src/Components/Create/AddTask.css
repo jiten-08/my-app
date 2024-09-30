@@ -1,0 +1,64 @@
+/*  */
+
+
+/* Form Layout */
+.form-container {
+  width: 370px;
+  margin: 20px auto;
+  background-color: #f1f3f6;
+  box-shadow: -8px -8px 30px #fff, 8px 8px 30px #babecc;
+  border-radius: 20px;
+  padding: 34px;
+}
+
+.form-segment {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #7027bf;
+}
+
+/* Inputs and Buttons */
+.input-element,
+.button-element {
+  border: 0;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #ebecf0;
+}
+
+.label-element {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.input-element {
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  color:#777;
+}
+
+.input-element:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+/* Buttons */
+.button-element {
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  color: #7027bf;
+  cursor: pointer;
+}
+
+.button-element:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+  transform: translateY(-2px); /* Optional: Add a slight lift effect */
+}
+

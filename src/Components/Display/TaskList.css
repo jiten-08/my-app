@@ -1,0 +1,100 @@
+.task-list-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px;
+}
+
+.task-card {
+    background-color: #EBECF0;
+    box-shadow: -8px -8px 30px #FFF, 8px 8px 30px #BABECC;
+    border-radius: 20px;
+    padding: 34px;
+    margin: 24px;
+    width: 300px; /* Increased width */
+    height: auto; /* Allows the height to adjust */
+    max-height: 600px; /* Maximum height for the card */
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    color: #61677C;
+    position: relative;
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.task-card:hover {
+    box-shadow: -4px -4px 20px rgba(255, 255, 255, 0.7), 4px 4px 20px rgba(186, 190, 204, 0.7);
+    transform: scale(1.02) translateY(-10px);
+}
+
+.task-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    color: #7027BF;
+    word-wrap: break-word; /* Ensures long words break into the next line */
+}
+
+.task-info {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #555;
+    line-height: 1.6;
+    word-wrap: break-word; /* Ensures long words break into the next line */
+    overflow-y: auto; /* Adds a scrollbar if content overflows vertically */
+    scrollbar-width: none;
+    max-height: 300px; /* Limits the height of the info section */
+}
+
+.task-date {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999999a1;
+}
+
+.delete-btn, .update-btn {
+    background-color: #8a55c2;
+    box-shadow: -8px -8px 30px #FFF, 8px 8px 30px #BABECC;
+    border-radius: 10px;
+    height: 2rem;
+    width: 2rem;
+    color: #EBECF0;
+    border: 0;
+    position: absolute;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.delete-btn {
+    right: 20px;
+    bottom: 20px;
+}
+
+.update-btn {
+    right: 60px;
+    bottom: 20px;
+}
+
+.delete-btn:hover, .update-btn:hover {
+    box-shadow: -4px -4px 10px #FFF, 4px 4px 10px #BABECC;
+    transform: scale(1.1);
+    background-color: #7027BF;
+}
+
+.add-btn {
+    background-color: #EBECF0;
+    box-shadow: -6px -6px 30px #FFF, 6px 6px 30px #bebebe;
+    border-radius: 10px;
+    padding: 10px 12px;
+    color: #7027BF;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.add-btn:hover {
+    box-shadow: -4px -4px 10px #FFF, 4px 4px 12px #bebebe;
+    transform: translateY(-2px);
+}
